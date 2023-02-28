@@ -26,17 +26,17 @@ const Customer = () => {
   const { name, image, description, services } = customer
 
   return (
-    <div className="px-[100px] py-[50px]">
-      <section className="__box flex items-center justify-between border-2 border-black rounded-3xl mx-5 p-[100px]">
+    <div className="customer px-[100px] py-[50px]">
+      <section className="__box flex items-center justify-between gap-5 border-2 border-black rounded-3xl mx-5 p-[100px]">
         <div className="max-w-[900px]">
-          <h2 className="text-[70px] font-bold capitalize">{name}</h2>
-          <p className="text-xl my-5">{description}</p>
+          <h2 className="customer__title text-[70px] font-bold capitalize">{name}</h2>
+          <p className="customer__text max-w-[900px] text-xl my-5">{description}</p>
         </div>
         <div>
-          <img className="w-[498px]" src={image} alt="" />
+          <img className="customer__image w-[498px]" src={image} alt="" />
         </div>
       </section>
-      <section className="flex items-center justify-evenly text-center my-[70px]">
+      <section className="flex items-center justify-evenly flex-wrap gap-10 text-center my-[70px]">
         {services.map((item) => {
           return (
             <div className="service__card flex flex-col justify-center items-center" key={item.id}>

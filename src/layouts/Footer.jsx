@@ -10,17 +10,17 @@ const Footer = () => {
   return (
     <footer className="px-[100px] py-[50px]">
       <div>
-        <div className="flex justify-between items-start">
+        <div className="flex justify-between items-start flex-wrap gap-10">
           <div>
             <Link to="/" className="flex items-center gap-x-5">
               <img src={Logo} alt="" />
               <span className="text-2xl font-semibold">MATRIX IT</span>
             </Link>
-            <p className="text-lg font-medium max-w-[400px]">
+            <p className="footer__text text-lg font-medium max-w-[400px]">
               High-quality, safe, and high-tech business solutions.{" "}
             </p>
           </div>
-          <nav>
+          {/* <nav>
             <h4 className="mb-10 text-xl font-bold">Menu</h4>
             <ul className="flex flex-col justify-start items-start gap-5">
               <li>
@@ -36,10 +36,10 @@ const Footer = () => {
                 <Link to="/">Contact us</Link>
               </li>
             </ul>
-          </nav>
+          </nav> */}
           <div>
             <h4 className="mb-10 text-xl font-bold">Contacts</h4>
-            <div className="flex flex-col justify-start items-start gap-5">
+            <div className="contacts__container flex flex-col justify-start items-start gap-5">
               <a href="tel:+(992) 11 114 3040">(992) 11 114 3040</a>
               <a href="mailto:info@matrix.tj">info@matrix.tj</a>
               <p>
